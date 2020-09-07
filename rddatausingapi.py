@@ -16,5 +16,5 @@ data1 = data['statewise']
 for msg in data1:
     res = json.loads(msg.value.decode('utf-8'))
     dlist = list(res.values())
-    df = pd.DataFrame([dlist], columns=['active', 'confirmed', 'Volume', 'High', 'Low'])
-    df = df.astype(float)
+    print(dlist)
+ 
